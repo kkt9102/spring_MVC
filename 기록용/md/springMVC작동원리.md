@@ -41,3 +41,13 @@
 	- Model : 데이터 혹은 데이터를 처리하는 영역을 의미
 	- View : 결과 화면을 만들어내는데 사용되는 자원을 의미
 	- Controller : 웹상의 요청을 처리하는 존재로 View와 Model 사이의 중간 통신역할을 의미
+	
+	- Mode2에서 모든 요청은 기본적으로 Controller로 호출한다. 각 Controller는 자신을 호출하는 특정한 URL 경로를 가지고 있다.
+	
+	- 1.사용자의 모든 요청은 스프링 MVC의 Front Controller에게 전달된다.
+	- 2.전달된 요청은 적절한 Controller를 찾아서 호출하게된다.
+	- 3.(이때 사용되는 컨트롤러의 작업은 개발자의몫...) Controller는 적절한 서비스 객체를 찾아서 호출
+	- 4.Service는 DB의 작업을 담당하는 DAO(Data Access Object)를 이용해서 원하는 DB를 요청
+	- 5.DAO 객체는 MyBatis를 이요하는 Mapper를 통해 해당하는 작업을 수행
+	- 6.Service가 처리한 DB를 다시 Controller에게 전달
+	- 7. Controller는 다시 Spring MVC쪽으로 DB를 전달.
