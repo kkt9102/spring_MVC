@@ -1,11 +1,11 @@
-# DATABASE »ý¼º
+# DATABASE ìƒì„±
 create database springMVC;
 
-# ÀüÁ¦ DATABASES º¸±â
+# ì „ì²´ DATABASES ì¡°íšŒ
 show databases;
 
-# ÇØ´ç DATABASE »ç¿ë
+# í•´ë‹¹ DATABASE ì„ íƒ
 use springMVC;
 
-# ¼±ÅÃÇÑ DATABASEÀÇ TABLE º¸±â
+# ì„ íƒí•œ DATABASEì˜ TABLE ì¡°íšŒ
 show tables;
