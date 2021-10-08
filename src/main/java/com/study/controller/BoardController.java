@@ -8,8 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class BoardController {
 
 	@RequestMapping("/borad/boardlist")
-	@ResponseBody
 	public String showBoardList() {
-		return "/board/boardlist.jsp";
+		return "/board/boardlist";
 	}
 }
